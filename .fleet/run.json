@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "gradle",
+            "name": "day1",
+            "tasks": ["run", "-Pday=1"],
+        },
+        {
+            "type": "gradle",
+            "name": "day2",
+            "tasks": ["run", "-Pday=2"],
+        },
+
+    ]
+}
