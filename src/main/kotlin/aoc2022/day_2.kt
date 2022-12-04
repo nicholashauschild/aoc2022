@@ -35,15 +35,15 @@ fun main() {
         val inn: List<String> = round.split(" ")
         val opponentHand: RpsHand = opponentHands.getValue(inn[0])
         val recommendedHand: RpsHand = recommendedHands.getValue(inn[1])
-        val battleOutcome = recommendedHand.battle(opponentHand)
+        val battleOutcome: RpsBattleOutcome = recommendedHand.battle(opponentHand)
 
-        val roundScorePart1 = handScores.getValue(recommendedHand) + outcomeScores.getValue(battleOutcome)
+        val roundScorePart1: Int = handScores.getValue(recommendedHand) + outcomeScores.getValue(battleOutcome)
         tournamentScorePart1 += roundScorePart1
 
         val desiredOutcome: RpsBattleOutcome = desiredOutcomes.getValue(inn[1])
         val requiredHand: RpsHand = opponentHand.determineHandFor(desiredOutcome)
 
-        val roundScorePart2 = handScores.getValue(requiredHand) + outcomeScores.getValue(desiredOutcome)
+        val roundScorePart2: Int = handScores.getValue(requiredHand) + outcomeScores.getValue(desiredOutcome)
         tournamentScorePart2 += roundScorePart2
     }
     println(tournamentScorePart1)
