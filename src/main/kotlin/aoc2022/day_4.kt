@@ -10,8 +10,8 @@ fun main() {
         val firstSectionBoundaries: List<Int> = sectionPairs[0].split("-").map{ it.toInt() }
         val sectionSectionBoundaries: List<Int> = sectionPairs[1].split("-").map{ it.toInt() }
 
-        val firstSectionRange = IntRange(firstSectionBoundaries[0], firstSectionBoundaries[1])
-        val secondSectionRange = IntRange(sectionSectionBoundaries[0], sectionSectionBoundaries[1])
+        val firstSectionRange = firstSectionBoundaries[0]..firstSectionBoundaries[1]
+        val secondSectionRange = sectionSectionBoundaries[0]..sectionSectionBoundaries[1]
 
         if (firstSectionRange.intersect(secondSectionRange).size in setOf(firstSectionRange.count(), secondSectionRange.count())) {
             fullyOverlap++

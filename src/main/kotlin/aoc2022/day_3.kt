@@ -13,8 +13,8 @@ fun main() {
         val midIdx = rucksack.length / 2
         val length = rucksack.length
 
-        val compartment1Items: Set<Char> = rucksack.slice(IntRange(0, midIdx-1)).toCharArray().toSet()
-        val compartment2Items: Set<Char> = rucksack.slice(IntRange(midIdx, length-1)).toCharArray().toSet()
+        val compartment1Items: Set<Char> = rucksack.slice(0 until midIdx).toCharArray().toSet()
+        val compartment2Items: Set<Char> = rucksack.slice(midIdx until length).toCharArray().toSet()
         val commonItem: Char = compartment1Items.intersect(compartment2Items).first()
 
         totalMisplacedItemPriority += itemPriorities.getValue(commonItem)

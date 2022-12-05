@@ -19,7 +19,7 @@ fun main() {
     elves.sortByDescending { it.calories }
 
     println( elves[0].calories )
-    println( elves.slice(IntRange(0, 2)).sumOf { it.calories } )
+    println( elves.slice(0..2).sumOf { it.calories } )
 }
 
 data class Elf(val idx: Int, val calories: Int)
