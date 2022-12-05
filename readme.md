@@ -16,4 +16,4 @@ gradlew.bat -Pday=<day#>
 ```
 
 #### Running using Fleet:
-Run -> Run & Debug -> Select the configuration you want to run.
+Run -> Run & Debug -> day<day#>
