@@ -1,8 +1,2 @@
 .gradle/
 build/
-
-# generate gradle wrapper, don't include it in git
-# > ./gradlew wrapper
-gradle/wrapper/
-gradlew
-gradlew.bat
