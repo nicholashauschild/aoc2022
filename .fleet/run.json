@@ -25,6 +25,11 @@
             "name": "day5",
             "tasks": ["run", "-Pday=5"],
         },
+        {
+            "type": "gradle",
+            "name": "day6",
+            "tasks": ["run", "-Pday=6"],
+        },
 
 
     ]
